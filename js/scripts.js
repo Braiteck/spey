@@ -120,6 +120,14 @@ $(() => {
 	})
 
 
+	// Боковая колонка - Текстовый сполйер
+	$('.product_info .instruction .title.spoler_btn').click(function (e) {
+		e.preventDefault()
+
+		$(this).toggleClass('active').next().slideToggle(300)
+	})
+
+
 	// Подвал - волна
 	$('footer .menu .item').mouseover(function () {
 		let position = $(this).offset()

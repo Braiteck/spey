@@ -646,6 +646,18 @@
 
 
 
+    .product_info .instruction .title.spoler_btn:after
+    {
+        top: -4px;
+    }
+
+    .product_info .instruction .title.spoler_btn.active:after
+    {
+        top: 6px;
+    }
+
+
+
     /*-----------------------
         Pharmacovigilance
     -----------------------*/

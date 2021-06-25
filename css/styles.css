@@ -5365,6 +5365,53 @@ aside .categories .sub a.active
 }
 
 
+.product_info .instruction .title.spoler_btn
+{
+    position: relative;
+
+    display: inline-block;
+
+    padding-right: 20px;
+
+    cursor: pointer;
+    vertical-align: top;
+}
+
+.product_info .instruction .title.spoler_btn:after
+{
+    position: absolute;
+    top: -6px;
+    right: 0;
+    bottom: 0;
+
+    display: block;
+
+    width: 8px;
+    height: 8px;
+    margin: auto;
+
+    content: '';
+    transition: .2s linear;
+    transform: rotate(-45deg);
+
+    border-bottom: 1px solid #2c46a3;
+    border-left: 1px solid #2c46a3;
+}
+
+.product_info .instruction .title.spoler_btn.active:after
+{
+    top: 4px;
+
+    transform: rotate(-225deg);
+}
+
+
+.product_info .instruction .hide
+{
+    display: none;
+}
+
+
 
 /*----------------
     Our values
