@@ -1,0 +1,467 @@
+@media (max-width: 479px)
+{
+    /*-------------------
+        Global styles
+    -------------------*/
+    :root
+    {
+        --font_size_title: 26px;
+    }
+
+
+
+    /*----------------
+        Pagination
+    ----------------*/
+    .pagination
+    {
+        margin-top: 32px;
+    }
+
+
+    .pagination .links
+    {
+        padding: 8px 22px;
+    }
+
+    .pagination .links > * + *
+    {
+        margin-left: 8px;
+    }
+
+
+    .pagination .prev,
+    .pagination .next
+    {
+        width: 46px;
+        height: 46px;
+    }
+
+    .pagination .prev
+    {
+        margin-right: 16px;
+    }
+
+    .pagination .next
+    {
+        margin-left: 16px;
+    }
+
+    .pagination .prev:after,
+    .pagination .next:after
+    {
+        width: 12px;
+        height: 12px;
+    }
+
+
+
+    /*---------------
+        Load more
+    ---------------*/
+    .load_more
+    {
+        margin-top: 32px;
+    }
+
+
+
+    /*-----------
+        Share
+    -----------*/
+    .share
+    {
+        margin-top: 32px;
+    }
+
+    .share > div
+    {
+        padding: 14px 24px;
+
+        border-radius: 12px;
+    }
+
+    .share .name
+    {
+        width: 100%;
+        margin-right: 0;
+        margin-bottom: 8px;
+    }
+
+
+
+    /*------------
+        Header
+    ------------*/
+    .mob_header
+    {
+        padding: 12px 0;
+    }
+
+
+    .mob_header .logo a,
+    .mob_header .logo img
+    {
+        width: 140px;
+    }
+
+
+    .mob_header .contacts
+    {
+        display: flex;
+
+        width: 100%;
+        margin-top: 12px;
+
+        order: 3;
+        justify-content: space-between;
+        align-items: center;
+        align-content: center;
+        flex-wrap: wrap;
+    }
+
+
+
+    /*-------------
+        Sidebar
+    -------------*/
+    aside .articles .list > *
+    {
+        width: calc(100% - 20px);
+    }
+
+
+
+    /*---------------
+        Page head
+    ---------------*/
+    .breadcrumbs .sep
+    {
+        width: 4px;
+        height: 4px;
+        margin: 0 8px;
+    }
+
+
+
+    /*----------------
+        Block head
+    ----------------*/
+
+
+
+    /*------------------
+        Form elements
+    ------------------*/
+    .form .columns > *
+    {
+        width: calc(100% - var(--form_columns_offset));
+    }
+
+
+    .form .bottom .agree
+    {
+        width: 100%;
+        max-width: 100%;
+        margin-bottom: 16px;
+    }
+
+    .form .bottom .submit
+    {
+        width: 100%;
+    }
+
+
+
+    /*----------------
+        Typography
+    ----------------*/
+    .text_block .gallery .row
+    {
+        margin-bottom: -12px;
+        margin-left: -12px;
+    }
+
+    .text_block .gallery .row > *
+    {
+        width: calc(50% - 12px);
+        margin-bottom: 12px;
+        margin-left: 12px;
+    }
+
+
+
+    /*-----------------
+        Main slider
+    -----------------*/
+    .main_slider .slide .title
+    {
+        font-size: 26px;
+        line-height: 32px;
+    }
+
+    .main_slider .slide .desc
+    {
+        font-size: 13px;
+        line-height: 19px;
+    }
+
+
+
+    /*--------------------
+        Promo products
+    --------------------*/
+    .promo_products .product .desc
+    {
+        width: calc(100% - 152px);
+        max-width: calc(100% - 152px);
+    }
+
+    .promo_products .product .link
+    {
+        font-size: 12px;
+        line-height: 18px;
+
+        width: 132px;
+        padding: 12px 20px;
+    }
+
+
+
+    /*---------------------
+        Catagories wall
+    ---------------------*/
+    .catagories_wall .row > *
+    {
+        width: calc(100% - 24px);
+    }
+
+
+
+    /*--------------
+        Products
+    --------------*/
+    .products .row,
+    .content .products .row
+    {
+        --products_count: 1;
+    }
+
+    .products .row > *,
+    .content .products .row > *
+    {
+        width: calc(100% + 1px);
+    }
+
+
+    .products .product .thumb
+    {
+        padding-bottom: 63%;
+    }
+
+
+
+    /*------------------
+        Product info
+    ------------------*/
+    .product_info .where_buy
+    {
+        padding: 0 20px;
+
+        border-radius: 8px;
+    }
+
+    .product_info .where_buy .items
+    {
+        margin-bottom: 20px;
+    }
+
+
+
+    .product_info .instruction .block_title
+    {
+        font-size: 22px;
+        line-height: 26px;
+    }
+
+    .product_info .instruction .download
+    {
+        width: 100%;
+    }
+
+
+
+    /*--------------
+        Feedback
+    --------------*/
+    .feedback
+    {
+        width: calc(100% + 40px);
+        max-width: calc(100% + 40px);
+        margin-right: -20px;
+        margin-left: -20px;
+        padding: 40px 20px;
+    }
+
+
+
+    /*-------------
+        History
+    -------------*/
+    .history .head
+    {
+        top: -224px;
+
+        height: 321px;
+    }
+
+    .history .head .img
+    {
+        object-position: 50% 100%;
+    }
+
+
+    .history .item .year
+    {
+        font-size: 20px;
+        line-height: 40px;
+
+        width: 160px;
+        height: 44px;
+    }
+
+    .history .item .title
+    {
+        font-size: 18px;
+        line-height: 24px;
+    }
+
+
+
+    /*---------------
+        Geography
+    ---------------*/
+    .geography #map
+    {
+        height: 360px;
+    }
+
+
+
+    /*----------------
+        Error info
+    ----------------*/
+    .error_info
+    {
+        padding-top: 40px;
+    }
+
+
+
+    /*-------------------
+        Contacts info
+    -------------------*/
+    .contacts_info .data .name
+    {
+        font-size: 15px;
+        line-height: 19px;
+    }
+
+
+
+    /*--------------
+        Articles
+    --------------*/
+    .articles .row > *
+    {
+        width: calc(100% - 20px);
+    }
+
+
+
+    /*------------------
+        Article info
+    ------------------*/
+    .article_info .head .article_title
+    {
+        font-size: 23px;
+        line-height: 29px;
+    }
+
+
+
+    /*------- ---------------
+        Production areas
+    ----------------------*/
+    .production_areas.gallery .row
+    {
+        margin-bottom: -12px;
+        margin-left: -12px;
+    }
+
+    .production_areas .gallery .row > *
+    {
+        width: calc(50% - 12px);
+        margin-bottom: 12px;
+        margin-left: 12px;
+    }
+
+
+
+    /*--------------------------
+        Research development
+    --------------------------*/
+    .research_development .block_head
+    {
+        margin-bottom: 24px;
+    }
+
+
+
+    /*-----------
+        Stats
+    -----------*/
+    .stats .row > *,
+    .stats .row > *:nth-child(4)
+    {
+        width: calc(100% - 16px);
+    }
+
+
+    .stats .item:before
+    {
+        top: auto;
+        right: 0;
+        bottom: 100%;
+        left: 0;
+
+        width: 8px;
+        height: 16px;
+    }
+
+    .stats .item:nth-child(2n+1):before
+    {
+        display: block;
+    }
+
+    .stats .item:nth-child(1):before
+    {
+        display: none;
+    }
+
+
+
+    /*-----------------
+        Cooperation
+    -----------------*/
+    .cooperation .block_head
+    {
+        margin-bottom: 24px;
+    }
+
+
+
+    /*------------
+        Footer
+    ------------*/
+}

@@ -1,0 +1,391 @@
+<!DOCTYPE html>
+<html lang="ru">
+	<head>
+		<meta http-equiv="Content-Type" content="text/html; charset=utf-8">
+
+		<!-- Адаптирование страницы для мобильных устройств -->
+		<meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
+
+		<!-- Запрет распознования номера телефона -->
+		<meta name="format-detection" content="telephone=no">
+		<meta name="SKYPE_TOOLBAR" content ="SKYPE_TOOLBAR_PARSER_COMPATIBLE">
+
+		<!-- Заголовок страницы -->
+		<title>Заголовок страницы</title>
+
+		<!-- Данное значение часто используют(использовали) поисковые системы -->
+		<meta name="description" content="">
+		<meta name="keywords" content="">
+
+		<!-- Традиционная иконка сайта, размер 16x16, прозрачность поддерживается. Рекомендуемый формат: .ico или .png -->
+		<link rel="shortcut icon" href="favicon.ico">
+
+		<!-- Изменение цвета панели моб. браузера -->
+		<meta name="msapplication-TileColor" content="#3148b5">
+		<meta name="theme-color" content="#3148b5">
+
+		<!-- Подключение шрифтов с гугла -->
+		<link rel="preconnect" href="https://fonts.gstatic.com">
+		<link href="https://fonts.googleapis.com/css2?family=Fira+Sans:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Montserrat:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap" rel="stylesheet">
+
+		<!-- Подключение файлов стилей -->
+		<link rel="stylesheet" href="https://unpkg.com/swiper/swiper-bundle.min.css">
+		<link rel="stylesheet" href="css/swiper.css">
+		<link rel="stylesheet" href="css/fancybox.css">
+		<link rel="stylesheet" href="css/styles.css">
+
+		<link rel="stylesheet" href="css/response_1279.css" media="print, (max-width: 1279px)">
+		<link rel="stylesheet" href="css/response_1023.css" media="print, (max-width: 1023px)">
+		<link rel="stylesheet" href="css/response_767.css" media="print, (max-width: 767px)">
+		<link rel="stylesheet" href="css/response_479.css" media="(max-width: 479px)">
+	</head>
+
+	<body>
+		<div class="wrap">
+			<div class="main with_bg">
+				<header class="no_bg">
+					<button class="close"></button>
+
+					<div class="mob_scroll">
+						<div class="cont row">
+							<a href="/" class="logo">
+								<img src="images/logo.svg" alt="">
+								<img src="images/logo2.svg" alt="">
+							</a>
+
+							<div class="langs modal_cont">
+								<button class="current mini_modal_btn" data-modal-id="#langs_modal">
+									Ru<span class="arr"></span>
+								</button>
+
+								<div class="mini_modal" id="langs_modal">
+									<div><a class="active">Ru</a></div>
+									<div><a href="/">Eng</a></div>
+								</div>
+							</div>
+
+							<div class="search">
+								<form action="">
+									<input type="text" name="" value="" class="input" placeholder="Поиск">
+
+									<button type="submit" class="submit_btn">
+										<img src="images/ic_search.svg" alt="">
+									</button>
+								</form>
+							</div>
+
+							<div class="contacts">
+								<div class="phone">
+									<a href="tel:88009006060">8 800 900 60 60</a>
+								</div>
+
+								<div class="email">
+									<a href="mailto:mail@spey.com.ru">mail@spey.com.ru</a>
+								</div>
+							</div>
+
+							<nav class="menu row">
+								<div class="item">
+									<a href="/">Главная</a>
+								</div>
+
+								<div class="item">
+									<a href="/" class="sub_link">О компании</a>
+
+									<div class="sub_menu">
+										<div><a href="/">Миссия и ценности компании</a></div>
+										<div><a href="/">История компании</a></div>
+										<div><a href="/">Производственные площади</a></div>
+										<div><a href="/">Исследования и разработки</a></div>
+										<div><a href="/">Обеспечение качества</a></div>
+										<div><a href="/">Компания в цифрах</a></div>
+										<div><a href="/">Фармкомнадзор</a></div>
+										<div><a href="/">География присутствия</a></div>
+									</div>
+								</div>
+
+								<div class="item">
+									<a href="/">Услуги</a>
+								</div>
+
+								<div class="item">
+									<a href="/" class="sub_link">Продукция</a>
+
+									<div class="sub_menu">
+										<div><a href="/">Акушерство</a></div>
+										<div><a href="/">Грудное скармливание</a></div>
+										<div><a href="/">Педиатрия</a></div>
+										<div><a href="/">Гинекология</a></div>
+										<div><a href="/">Урология/Нефрология</a></div>
+										<div><a href="/">Гастроэнтерология</a></div>
+									</div>
+								</div>
+
+								<div class="item">
+									<a href="/">Новости</a>
+								</div>
+
+								<div class="item">
+									<a class="active">ФАРМАКОНАДЗОР</a>
+								</div>
+
+								<div class="item">
+									<a href="/">Сотрудничество</a>
+								</div>
+
+								<div class="item">
+									<a href="/">контакты</a>
+								</div>
+							</nav>
+						</div>
+					</div>
+				</header>
+
+
+				<section class="mob_header">
+					<div class="cont">
+						<a href="/" class="logo">
+							<img src="images/logo.svg" alt="">
+						</a>
+
+						<div class="contacts">
+							<div class="phone">
+								<a href="tel:88009006060">8 800 900 60 60</a>
+							</div>
+
+							<div class="email">
+								<a href="mailto:mail@spey.com.ru">mail@spey.com.ru</a>
+							</div>
+						</div>
+
+						<div class="search modal_cont">
+							<button class="btn mini_modal_btn" data-modal-id="#mob_searh_modal">
+								<img src="images/ic_search.svg" alt="">
+							</button>
+
+							<div class="mini_modal" id="mob_searh_modal">
+								<form action="">
+									<input type="text" name="" value="" class="input" placeholder="Поиск">
+
+									<button type="submit" class="submit_btn">
+										<img src="images/ic_search.svg" alt="">
+									</button>
+								</form>
+							</div>
+						</div>
+
+						<button class="mob_menu_btn">
+							<span></span>
+						</button>
+					</div>
+				</section>
+
+
+				<section class="pharmacovigilance">
+					<div class="cont">
+						<div class="data">
+							<div class="block_title">Фармаконадзор</div>
+
+							<div class="title">Обо всех неблагоприятных побочных реакциях на препараты Spey Вы можете сообщить:</div>
+
+							<div class="items">
+								<div>Заполнив информацию на сайте: www.spey.com.ru</div>
+
+								<div>Прислав информацию на электронную почту: <a href="mailto:info@spey.com.ru">info@spey.com.ru</a></div>
+
+								<div>Позвонив по бесплатному круглосуточному телефону: <a href="tel:88006000000">8-800-600-00-00</a></div>
+							</div>
+
+							<div class="messengers">
+								<a href="/" target="_blank" rel="noopener nofollow">
+									<img src="images/ic_telegram.png" alt="">
+								</a>
+
+								<a href="/" target="_blank" rel="noopener nofollow">
+									<img src="images/ic_whatsapp.png" alt="">
+								</a>
+
+								<a href="/" target="_blank" rel="noopener nofollow">
+									<img src="images/ic_viber.png" alt="">
+								</a>
+							</div>
+						</div>
+
+
+						<div class="feedback">
+							<div class="block_title">Сообщить о реакции</div>
+
+							<form action="" class="form">
+								<div class="columns row">
+									<div class="line">
+										<div class="field">
+											<input type="text" name="" value="" class="input" placeholder="Ваше имя">
+										</div>
+									</div>
+
+									<div class="line">
+										<div class="field">
+											<input type="text" name="" value="" class="input" placeholder="Название препарата">
+										</div>
+									</div>
+
+									<div class="line">
+										<div class="field">
+											<input type="email" name="" value="" class="input" placeholder="Ваш e-mail">
+										</div>
+									</div>
+
+									<div class="line">
+										<div class="field">
+											<input type="tel" name="" value="" class="input" placeholder="Ваш телефон">
+										</div>
+									</div>
+								</div>
+
+								<div class="line">
+									<div class="field">
+										<textarea name="" placeholder="Сообщение"></textarea>
+									</div>
+								</div>
+
+								<div class="bottom">
+									<div class="agree">
+										<input type="checkbox" name="agree" id="agree_check" checked>
+										<label for="agree_check">Даю согласие на обработку персональных данных в соответсвии с ФЗ125</label>
+									</div>
+
+									<div class="submit">
+										<button type="submit" class="submit_btn">ОТправить</button>
+									</div>
+								</div>
+							</form>
+
+
+							<div class="seccess_message">
+								<div>
+									<div class="icon">
+										<img data-src="images/ic_check.svg" alt="" class="lozad">
+									</div>
+
+									<div class="title">Спасибо!</div>
+
+									<div class="desc">Ваше сообщение отправлено<br> и будет прочитано нами.<br> Как хорошо.</div>
+								</div>
+							</div>
+						</div>
+					</div>
+				</section>
+
+				<div class="bg lozad" data-background-image="images/bg_pharmacovigilance_page.jpg"></div>
+			</div>
+
+
+			<footer>
+				<div class="info">
+					<div class="cont">
+						<nav class="menu row">
+							<div class="item">
+								<a href="/">Главная</a>
+							</div>
+
+							<div class="item">
+								<a href="/" class="sub_link">О компании</a>
+
+								<div class="sub_menu">
+									<div><a href="/">Миссия и ценности компании</a></div>
+									<div><a href="/">История компании</a></div>
+									<div><a href="/">Производственные площади</a></div>
+									<div><a href="/">Исследования и разработки</a></div>
+									<div><a href="/">Обеспечение качества</a></div>
+									<div><a href="/">Компания в цифрах</a></div>
+									<div><a href="/">Фармкомнадзор</a></div>
+									<div><a href="/">География присутствия</a></div>
+								</div>
+							</div>
+
+							<div class="item">
+								<a href="/">Услуги</a>
+							</div>
+
+							<div class="item">
+								<a href="/" class="sub_link">Продукция</a>
+
+								<div class="sub_menu">
+									<div><a href="/">Акушерство</a></div>
+									<div><a href="/">Грудное скармливание</a></div>
+									<div><a href="/">Педиатрия</a></div>
+									<div><a href="/">Гинекология</a></div>
+									<div><a href="/">Урология/Нефрология</a></div>
+									<div><a href="/">Гастроэнтерология</a></div>
+								</div>
+							</div>
+
+							<div class="item">
+								<a href="/">Новости</a>
+							</div>
+
+							<div class="item">
+								<a href="/">ФАРМАКОНАДЗОР</a>
+							</div>
+
+							<div class="item">
+								<a href="/">Сотрудничество</a>
+							</div>
+
+							<div class="item">
+								<a href="/">контакты</a>
+							</div>
+						</nav>
+
+
+						<div class="contacts">
+							<div class="location">
+								Адрес:<br> Осенний бульвар 23, БЦ Крылатский,<br> 121609, Москва, Россия
+							</div>
+
+							<div class="phone">
+								<a href="tel:+74957813742">+7 (495) 781-37-42</a>
+							</div>
+
+							<div class="email">
+								<a href="mailto:info@spey.com.ru">info@spey.com.ru</a>
+							</div>
+						</div>
+					</div>
+				</div>
+
+
+				<div class="bottom">
+					<div class="cont row">
+						<div class="copyright">&copy; 2011-2021 Spey.  Все права защищены.</div>
+
+						<div class="creator">
+							<a href="/" target="_blank">Разработка сайта — RED COMPANY</a>
+						</div>
+					</div>
+				</div>
+			</footer>
+
+
+			<div class="overlay"></div>
+		</div>
+
+
+		<div class="supports_error">
+			Ваш браузер устарел рекомендуем обновить его до последней версии<br> или использовать другой более современный.
+		</div>
+
+
+		<!-- Подключение javascript файлов -->
+		<script src="js/jquery-3.5.0.min.js"></script>
+		<script src="js/lozad.min.js"></script>
+		<script src="https://unpkg.com/swiper/swiper-bundle.min.js"></script>
+		<script src="js/inputmask.min.js"></script>
+		<script src="js/nice-select.js"></script>
+		<script src="js/masonry.min.js"></script>
+		<script src="js/fancybox.min.js"></script>
+		<script src="js/magic360.js"></script>
+		<script src="js/functions.js"></script>
+		<script src="js/scripts.js"></script>
+	</body>
+</html>

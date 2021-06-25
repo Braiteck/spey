@@ -1,0 +1,181 @@
+<!DOCTYPE html>
+<html lang="ru">
+	<head>
+		<meta http-equiv="Content-Type" content="text/html; charset=utf-8">
+
+		<!-- Адаптирование страницы для мобильных устройств -->
+		<meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
+
+		<!-- Запрет распознования номера телефона -->
+		<meta name="format-detection" content="telephone=no">
+		<meta name="SKYPE_TOOLBAR" content ="SKYPE_TOOLBAR_PARSER_COMPATIBLE">
+
+		<!-- Заголовок страницы -->
+		<title>Заголовок страницы</title>
+
+		<!-- Данное значение часто используют(использовали) поисковые системы -->
+		<meta name="description" content="">
+		<meta name="keywords" content="">
+
+		<!-- Традиционная иконка сайта, размер 16x16, прозрачность поддерживается. Рекомендуемый формат: .ico или .png -->
+		<link rel="shortcut icon" href="favicon.ico">
+
+		<!-- Изменение цвета панели моб. браузера -->
+		<meta name="msapplication-TileColor" content="#3148b5">
+		<meta name="theme-color" content="#3148b5">
+
+		<!-- Подключение шрифтов с гугла -->
+		<link rel="preconnect" href="https://fonts.gstatic.com">
+		<link href="https://fonts.googleapis.com/css2?family=Fira+Sans:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Montserrat:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap" rel="stylesheet">
+
+		<!-- Подключение файлов стилей -->
+		<link rel="stylesheet" href="https://unpkg.com/swiper/swiper-bundle.min.css">
+		<link rel="stylesheet" href="css/swiper.css">
+		<link rel="stylesheet" href="css/fancybox.css">
+		<link rel="stylesheet" href="css/styles.css">
+
+		<link rel="stylesheet" href="css/response_1279.css" media="print, (max-width: 1279px)">
+		<link rel="stylesheet" href="css/response_1023.css" media="print, (max-width: 1023px)">
+		<link rel="stylesheet" href="css/response_767.css" media="print, (max-width: 767px)">
+		<link rel="stylesheet" href="css/response_479.css" media="(max-width: 479px)">
+	</head>
+
+	<body>
+		<div class="wrap">
+			<div class="main with_bg">
+				<header class="no_bg">
+					<button class="close"></button>
+
+					<div class="mob_scroll">
+						<div class="cont row">
+							<a href="/" class="logo">
+								<img src="images/logo.svg" alt="">
+								<img src="images/logo2.svg" alt="">
+							</a>
+
+							<div class="langs modal_cont">
+								<button class="current mini_modal_btn" data-modal-id="#langs_modal">
+									Ru<span class="arr"></span>
+								</button>
+
+								<div class="mini_modal" id="langs_modal">
+									<div><a class="active">Ru</a></div>
+									<div><a href="/">Eng</a></div>
+								</div>
+							</div>
+
+							<div class="search">
+								<form action="">
+									<input type="text" name="" value="" class="input" placeholder="Поиск">
+
+									<button type="submit" class="submit_btn">
+										<img src="images/ic_search.svg" alt="">
+									</button>
+								</form>
+							</div>
+
+							<div class="contacts">
+								<div class="phone">
+									<a href="tel:88009006060">8 800 900 60 60</a>
+								</div>
+
+								<div class="email">
+									<a href="mailto:mail@spey.com.ru">mail@spey.com.ru</a>
+								</div>
+							</div>
+						</div>
+					</div>
+				</header>
+
+
+				<section class="mob_header">
+					<div class="cont">
+						<a href="/" class="logo">
+							<img src="images/logo.svg" alt="">
+						</a>
+
+						<div class="contacts">
+							<div class="phone">
+								<a href="tel:88009006060">8 800 900 60 60</a>
+							</div>
+
+							<div class="email">
+								<a href="mailto:mail@spey.com.ru">mail@spey.com.ru</a>
+							</div>
+						</div>
+
+						<div class="search modal_cont">
+							<button class="btn mini_modal_btn" data-modal-id="#mob_searh_modal">
+								<img src="images/ic_search.svg" alt="">
+							</button>
+
+							<div class="mini_modal" id="mob_searh_modal">
+								<form action="">
+									<input type="text" name="" value="" class="input" placeholder="Поиск">
+
+									<button type="submit" class="submit_btn">
+										<img src="images/ic_search.svg" alt="">
+									</button>
+								</form>
+							</div>
+						</div>
+
+						<button class="mob_menu_btn">
+							<span></span>
+						</button>
+					</div>
+				</section>
+
+
+				<section class="error_info block">
+					<div class="cont">
+						<div class="title">Ошибка 404</div>
+
+						<div class="desc">Страница удалена или адрес указан неверно.</div>
+
+						<div class="links">
+							<a href="/">На главную</a>
+							<a href="/" class="back_link">Назад</a>
+						</div>
+					</div>
+				</section>
+
+				<div class="bg lozad" data-background-image="images/bg_error_page.jpg"></div>
+			</div>
+
+
+			<footer class="white">
+				<div class="bottom">
+					<div class="cont row">
+						<div class="copyright">&copy; 2011-2021 Spey.  Все права защищены.</div>
+
+						<div class="creator">
+							<a href="/" target="_blank">Разработка сайта — RED COMPANY</a>
+						</div>
+					</div>
+				</div>
+			</footer>
+
+
+			<div class="overlay"></div>
+		</div>
+
+
+		<div class="supports_error">
+			Ваш браузер устарел рекомендуем обновить его до последней версии<br> или использовать другой более современный.
+		</div>
+
+
+		<!-- Подключение javascript файлов -->
+		<script src="js/jquery-3.5.0.min.js"></script>
+		<script src="js/lozad.min.js"></script>
+		<script src="https://unpkg.com/swiper/swiper-bundle.min.js"></script>
+		<script src="js/inputmask.min.js"></script>
+		<script src="js/nice-select.js"></script>
+		<script src="js/masonry.min.js"></script>
+		<script src="js/fancybox.min.js"></script>
+		<script src="js/magic360.js"></script>
+		<script src="js/functions.js"></script>
+		<script src="js/scripts.js"></script>
+	</body>
+</html>

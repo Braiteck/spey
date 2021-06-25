@@ -1,0 +1,615 @@
+<!DOCTYPE html>
+<html lang="ru">
+	<head>
+		<meta http-equiv="Content-Type" content="text/html; charset=utf-8">
+
+		<!-- Адаптирование страницы для мобильных устройств -->
+		<meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
+
+		<!-- Запрет распознования номера телефона -->
+		<meta name="format-detection" content="telephone=no">
+		<meta name="SKYPE_TOOLBAR" content ="SKYPE_TOOLBAR_PARSER_COMPATIBLE">
+
+		<!-- Заголовок страницы -->
+		<title>Заголовок страницы</title>
+
+		<!-- Данное значение часто используют(использовали) поисковые системы -->
+		<meta name="description" content="">
+		<meta name="keywords" content="">
+
+		<!-- Традиционная иконка сайта, размер 16x16, прозрачность поддерживается. Рекомендуемый формат: .ico или .png -->
+		<link rel="shortcut icon" href="favicon.ico">
+
+		<!-- Изменение цвета панели моб. браузера -->
+		<meta name="msapplication-TileColor" content="#3148b5">
+		<meta name="theme-color" content="#3148b5">
+
+		<!-- Подключение шрифтов с гугла -->
+		<link rel="preconnect" href="https://fonts.gstatic.com">
+		<link href="https://fonts.googleapis.com/css2?family=Fira+Sans:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Montserrat:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap" rel="stylesheet">
+
+		<!-- Подключение файлов стилей -->
+		<link rel="stylesheet" href="https://unpkg.com/swiper/swiper-bundle.min.css">
+		<link rel="stylesheet" href="css/swiper.css">
+		<link rel="stylesheet" href="css/fancybox.css">
+		<link rel="stylesheet" href="css/styles.css">
+
+		<link rel="stylesheet" href="css/response_1279.css" media="print, (max-width: 1279px)">
+		<link rel="stylesheet" href="css/response_1023.css" media="print, (max-width: 1023px)">
+		<link rel="stylesheet" href="css/response_767.css" media="print, (max-width: 767px)">
+		<link rel="stylesheet" href="css/response_479.css" media="(max-width: 479px)">
+	</head>
+
+	<body>
+		<div class="wrap">
+			<div class="main">
+				<header class="no_bg">
+					<button class="close"></button>
+
+					<div class="mob_scroll">
+						<div class="cont row">
+							<div class="logo">
+								<img src="images/logo.svg" alt="">
+								<img src="images/logo2.svg" alt="">
+							</div>
+
+							<div class="langs modal_cont">
+								<button class="current mini_modal_btn" data-modal-id="#langs_modal">
+									Ru<span class="arr"></span>
+								</button>
+
+								<div class="mini_modal" id="langs_modal">
+									<div><a class="active">Ru</a></div>
+									<div><a href="/">Eng</a></div>
+								</div>
+							</div>
+
+							<div class="search">
+								<form action="">
+									<input type="text" name="" value="" class="input" placeholder="Поиск">
+
+									<button type="submit" class="submit_btn">
+										<img src="images/ic_search.svg" alt="">
+									</button>
+								</form>
+							</div>
+
+							<div class="contacts">
+								<div class="phone">
+									<a href="tel:88009006060">8 800 900 60 60</a>
+								</div>
+
+								<div class="email">
+									<a href="mailto:mail@spey.com.ru">mail@spey.com.ru</a>
+								</div>
+							</div>
+
+							<nav class="menu row">
+								<div class="item">
+									<a class="active">Главная</a>
+								</div>
+
+								<div class="item">
+									<a href="/" class="sub_link">О компании</a>
+
+									<div class="sub_menu">
+										<div><a href="/">Миссия и ценности компании</a></div>
+										<div><a href="/">История компании</a></div>
+										<div><a href="/">Производственные площади</a></div>
+										<div><a href="/">Исследования и разработки</a></div>
+										<div><a href="/">Обеспечение качества</a></div>
+										<div><a href="/">Компания в цифрах</a></div>
+										<div><a href="/">Фармкомнадзор</a></div>
+										<div><a href="/">География присутствия</a></div>
+									</div>
+								</div>
+
+								<div class="item">
+									<a href="/">Услуги</a>
+								</div>
+
+								<div class="item">
+									<a href="/" class="sub_link">Продукция</a>
+
+									<div class="sub_menu">
+										<div><a href="/">Акушерство</a></div>
+										<div><a href="/">Грудное скармливание</a></div>
+										<div><a href="/">Педиатрия</a></div>
+										<div><a href="/">Гинекология</a></div>
+										<div><a href="/">Урология/Нефрология</a></div>
+										<div><a href="/">Гастроэнтерология</a></div>
+									</div>
+								</div>
+
+								<div class="item">
+									<a href="/">Новости</a>
+								</div>
+
+								<div class="item">
+									<a href="/">ФАРМАКОНАДЗОР</a>
+								</div>
+
+								<div class="item">
+									<a href="/">Сотрудничество</a>
+								</div>
+
+								<div class="item">
+									<a href="/">контакты</a>
+								</div>
+							</nav>
+						</div>
+					</div>
+				</header>
+
+
+				<section class="mob_header">
+					<div class="cont">
+						<div class="logo">
+							<img src="images/logo.svg" alt="">
+						</div>
+
+						<div class="contacts">
+							<div class="phone">
+								<a href="tel:88009006060">8 800 900 60 60</a>
+							</div>
+
+							<div class="email">
+								<a href="mailto:mail@spey.com.ru">mail@spey.com.ru</a>
+							</div>
+						</div>
+
+						<div class="search modal_cont">
+							<button class="btn mini_modal_btn" data-modal-id="#mob_searh_modal">
+								<img src="images/ic_search.svg" alt="">
+							</button>
+
+							<div class="mini_modal" id="mob_searh_modal">
+								<form action="">
+									<input type="text" name="" value="" class="input" placeholder="Поиск">
+
+									<button type="submit" class="submit_btn">
+										<img src="images/ic_search.svg" alt="">
+									</button>
+								</form>
+							</div>
+						</div>
+
+						<button class="mob_menu_btn">
+							<span></span>
+						</button>
+					</div>
+				</section>
+
+
+				<section class="main_slider block">
+					<div class="swiper-container">
+						<div class="swiper-wrapper">
+							<div class="slide swiper-slide">
+								<div class="cont">
+									<div class="info">
+										<div class="title">ЗДОРОВЬЕ — ОТВЕТСТВЕННОСТЬ</div>
+
+										<div class="desc">Международная фармацевтическая компания, работающая на рынке уже более 15 лет.</div>
+
+										<a href="/" class="link">Подробнее</a>
+									</div>
+								</div>
+
+								<div class="bg" style="background-image: url(images/tmp/main_slider_img.jpg);"></div>
+							</div>
+
+							<div class="slide swiper-slide">
+								<div class="cont">
+									<div class="info">
+										<div class="title">ЗДОРОВЬЕ — ОТВЕТСТВЕННОСТЬ</div>
+
+										<div class="desc">Международная фармацевтическая компания, работающая на рынке уже более 15 лет.</div>
+
+										<a href="/" class="link">Подробнее</a>
+									</div>
+								</div>
+
+								<div class="bg" style="background-image: url(images/tmp/main_slider_img.jpg);"></div>
+							</div>
+
+							<div class="slide swiper-slide">
+								<div class="cont">
+									<div class="info">
+										<div class="title">ЗДОРОВЬЕ — ОТВЕТСТВЕННОСТЬ</div>
+
+										<div class="desc">Международная фармацевтическая компания, работающая на рынке уже более 15 лет.</div>
+
+										<a href="/" class="link">Подробнее</a>
+									</div>
+								</div>
+
+								<div class="bg" style="background-image: url(images/tmp/main_slider_img.jpg);"></div>
+							</div>
+
+							<div class="slide swiper-slide">
+								<div class="cont">
+									<div class="info">
+										<div class="title">ЗДОРОВЬЕ — ОТВЕТСТВЕННОСТЬ</div>
+
+										<div class="desc">Международная фармацевтическая компания, работающая на рынке уже более 15 лет.</div>
+
+										<a href="/" class="link">Подробнее</a>
+									</div>
+								</div>
+
+								<div class="bg" style="background-image: url(images/tmp/main_slider_img.jpg);"></div>
+							</div>
+						</div>
+
+						<div class="swiper-pagination"></div>
+					</div>
+
+
+					<div class="promo_products">
+						<div class="swiper-container">
+							<div class="swiper-wrapper">
+								<div class="swiper-slide">
+									<div class="product">
+										<a href="/" class="thumb">
+											<img data-src="images/tmp/promo_product_thumb.png" alt="" class="lozad">
+
+											<div class="sticker green">Новинка</div>
+										</a>
+
+										<div class="name">
+											<a href="/">ЛИНДАВИТ ПРЕГНА</a>
+										</div>
+
+										<div class="desc">Quis ipsum suspendisse ultrices gravida.</div>
+
+										<a href="/" class="link">О продукте</a>
+									</div>
+								</div>
+
+								<div class="swiper-slide">
+									<div class="product">
+										<a href="/" class="thumb">
+											<img data-src="images/tmp/promo_product_thumb.png" alt="" class="lozad">
+
+											<div class="sticker green">Новинка</div>
+										</a>
+
+										<div class="name">
+											<a href="/">ЛИНДАВИТ ПРЕГНА</a>
+										</div>
+
+										<div class="desc">Quis ipsum suspendisse ultrices gravida.</div>
+
+										<a href="/" class="link">О продукте</a>
+									</div>
+								</div>
+							</div>
+						</div>
+					</div>
+				</section>
+
+
+				<section class="our_values block">
+					<div class="cont">
+						<div class="row">
+							<div class="data">
+								<div class="block_head">
+									<div class="title">Наши ценности</div>
+								</div>
+
+								<div class="list">
+									<div class="item">
+										<div class="desc"><b>ЖИЗНЬ</b> — Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</div>
+									</div>
+
+									<div class="item">
+										<div class="desc"><b>ЗДОРОВЬЕ</b> — Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.</div>
+									</div>
+
+									<div class="item">
+										<div class="desc"><b>ТВОРЧЕСТВО</b> — Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</div>
+									</div>
+
+									<div class="item">
+										<div class="desc"><b>Командный дух</b> — Lorem ipsum dolor sit amet, consectetur adipiscing elit.</div>
+									</div>
+
+									<div class="item">
+										<div class="desc"><b>Профессионализм</b> — Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.</div>
+									</div>
+
+									<div class="item">
+										<div class="desc"><b>Уважение</b> — Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</div>
+									</div>
+								</div>
+							</div>
+
+							<div class="image">
+								<img data-src="images/tmp/our_values_img.jpg" alt="" class="lozad">
+							</div>
+						</div>
+					</div>
+				</section>
+
+
+				<section class="catagories_wall block">
+					<div class="cont">
+						<div class="block_head white">
+							<div class="title">Продукция</div>
+						</div>
+
+						<div class="row">
+							<a href="/" class="category">
+								<div class="icon">
+									<img data-src="images/ic_category1.svg" alt="" class="lozad">
+								</div>
+								<div class="name">Акушерство</div>
+							</a>
+
+							<a href="/" class="category">
+								<div class="icon">
+									<img data-src="images/ic_category2.svg" alt="" class="lozad">
+								</div>
+								<div class="name">Грудное вскармливание</div>
+							</a>
+
+							<a href="/" class="category">
+								<div class="icon">
+									<img data-src="images/ic_category3.svg" alt="" class="lozad">
+								</div>
+								<div class="name">Педиатрия</div>
+							</a>
+
+							<a href="/" class="category">
+								<div class="icon">
+									<img data-src="images/ic_category4.svg" alt="" class="lozad">
+								</div>
+								<div class="name">Урология</div>
+							</a>
+
+							<a href="/" class="category">
+								<div class="icon">
+									<img data-src="images/ic_category5.svg" alt="" class="lozad">
+								</div>
+								<div class="name">Гинекология</div>
+							</a>
+
+							<a href="/" class="category">
+								<div class="icon">
+									<img data-src="images/ic_category6.svg" alt="" class="lozad">
+								</div>
+								<div class="name">Гастроэнтерология</div>
+							</a>
+						</div>
+
+
+						<!-- <div class="row full_w">
+							<a href="/" class="category">
+								<div class="icon">
+									<img data-src="images/ic_category1.svg" alt="" class="lozad">
+								</div>
+								<div class="name">Акушерство</div>
+							</a>
+
+							<a href="/" class="category">
+								<div class="icon">
+									<img data-src="images/ic_category2.svg" alt="" class="lozad">
+								</div>
+								<div class="name">Грудное вскармливание</div>
+							</a>
+
+							<a href="/" class="category">
+								<div class="icon">
+									<img data-src="images/ic_category3.svg" alt="" class="lozad">
+								</div>
+								<div class="name">Педиатрия</div>
+							</a>
+
+							<a href="/" class="category">
+								<div class="icon">
+									<img data-src="images/ic_category4.svg" alt="" class="lozad">
+								</div>
+								<div class="name">Урология</div>
+							</a>
+
+							<a href="/" class="category">
+								<div class="icon">
+									<img data-src="images/ic_category5.svg" alt="" class="lozad">
+								</div>
+								<div class="name">Гинекология</div>
+							</a>
+
+							<a href="/" class="category">
+								<div class="icon">
+									<img data-src="images/ic_category6.svg" alt="" class="lozad">
+								</div>
+								<div class="name">Гастроэнтерология</div>
+							</a>
+						</div> -->
+					</div>
+
+					<div class="bg lozad" data-background-image="images/bg_catagories_wall.jpg"></div>
+				</section>
+
+
+				<section class="articles block padding">
+					<div class="cont">
+						<div class="block_head">
+							<div class="title blue">Новости компании</div>
+
+							<div class="all_link">
+								<a href="/">ВСЕ Новости</a>
+							</div>
+						</div>
+
+						<div class="row">
+							<a href="/" class="article">
+								<div class="sticker orange">Важно</div>
+
+								<div href="/" class="thumb">
+									<img data-src="images/tmp/article_thumb.jpg" alt="" class="lozad">
+								</div>
+
+								<div class="info">
+									<div class="date">23.10.2021</div>
+
+									<div class="name">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt.</div>
+								</div>
+							</a>
+
+							<a href="/" class="article">
+								<div class="sticker blue">Новинка</div>
+
+								<div href="/" class="thumb">
+									<img data-src="images/tmp/article_thumb2.jpg" alt="" class="lozad">
+								</div>
+
+								<div class="info">
+									<div class="date">23.10.2021</div>
+
+									<div class="name">Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.</div>
+								</div>
+							</a>
+
+							<a href="/" class="article">
+								<div href="/" class="thumb">
+									<img data-src="images/tmp/article_thumb3.jpg" alt="" class="lozad">
+								</div>
+
+								<div class="info">
+									<div class="date">23.10.2021</div>
+
+									<div class="name">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt.</div>
+								</div>
+							</a>
+
+							<a href="/" class="article tablet_hide">
+								<div class="sticker green">интересное</div>
+
+								<div href="/" class="thumb">
+									<img data-src="images/tmp/article_thumb4.jpg" alt="" class="lozad">
+								</div>
+
+								<div class="info">
+									<div class="date">23.10.2021</div>
+
+									<div class="name">Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.</div>
+								</div>
+							</a>
+						</div>
+					</div>
+				</section>
+			</div>
+
+
+			<footer>
+				<img src="images/footer_wave.png" alt="" class="wave">
+
+				<div class="info">
+					<div class="cont">
+						<nav class="menu row">
+							<div class="item">
+								<a href="/">Главная</a>
+							</div>
+
+							<div class="item">
+								<a href="/" class="sub_link">О компании</a>
+
+								<div class="sub_menu">
+									<div><a href="/">Миссия и ценности компании</a></div>
+									<div><a href="/">История компании</a></div>
+									<div><a href="/">Производственные площади</a></div>
+									<div><a href="/">Исследования и разработки</a></div>
+									<div><a href="/">Обеспечение качества</a></div>
+									<div><a href="/">Компания в цифрах</a></div>
+									<div><a href="/">Фармкомнадзор</a></div>
+									<div><a href="/">География присутствия</a></div>
+								</div>
+							</div>
+
+							<div class="item">
+								<a href="/">Услуги</a>
+							</div>
+
+							<div class="item">
+								<a href="/" class="sub_link">Продукция</a>
+
+								<div class="sub_menu">
+									<div><a href="/">Акушерство</a></div>
+									<div><a href="/">Грудное скармливание</a></div>
+									<div><a href="/">Педиатрия</a></div>
+									<div><a href="/">Гинекология</a></div>
+									<div><a href="/">Урология/Нефрология</a></div>
+									<div><a href="/">Гастроэнтерология</a></div>
+								</div>
+							</div>
+
+							<div class="item">
+								<a href="/">Новости</a>
+							</div>
+
+							<div class="item">
+								<a href="/">ФАРМАКОНАДЗОР</a>
+							</div>
+
+							<div class="item">
+								<a href="/">Сотрудничество</a>
+							</div>
+
+							<div class="item">
+								<a href="/">контакты</a>
+							</div>
+						</nav>
+
+
+						<div class="contacts">
+							<div class="location">
+								Адрес:<br> Осенний бульвар 23, БЦ Крылатский,<br> 121609, Москва, Россия
+							</div>
+
+							<div class="phone">
+								<a href="tel:+74957813742">+7 (495) 781-37-42</a>
+							</div>
+
+							<div class="email">
+								<a href="mailto:info@spey.com.ru">info@spey.com.ru</a>
+							</div>
+						</div>
+					</div>
+				</div>
+
+
+				<div class="bottom">
+					<div class="cont row">
+						<div class="copyright">&copy; 2011-2021 Spey.  Все права защищены.</div>
+
+						<div class="creator">
+							<a href="/" target="_blank">Разработка сайта — RED COMPANY</a>
+						</div>
+					</div>
+				</div>
+			</footer>
+
+
+			<div class="overlay"></div>
+		</div>
+
+
+		<div class="supports_error">
+			Ваш браузер устарел рекомендуем обновить его до последней версии<br> или использовать другой более современный.
+		</div>
+
+
+		<!-- Подключение javascript файлов -->
+		<script src="js/jquery-3.5.0.min.js"></script>
+		<script src="js/lozad.min.js"></script>
+		<script src="https://unpkg.com/swiper/swiper-bundle.min.js"></script>
+		<script src="js/inputmask.min.js"></script>
+		<script src="js/nice-select.js"></script>
+		<script src="js/masonry.min.js"></script>
+		<script src="js/fancybox.min.js"></script>
+		<script src="js/magic360.js"></script>
+		<script src="js/functions.js"></script>
+		<script src="js/scripts.js"></script>
+	</body>
+</html>

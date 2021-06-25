@@ -1,0 +1,972 @@
+@media print, (max-width: 1023px)
+{
+    /*-------------------
+        Global styles
+    -------------------*/
+    :root
+    {
+        --sidebar_width: 100%;
+        --font_size: 14px;
+        --font_size_title: 32px;
+    }
+
+
+    .block
+    {
+        margin-bottom: 64px;
+    }
+
+
+    .content_flex .content,
+    .content_flex.big_aside .content
+    {
+        width: 100%;
+    }
+
+
+    .tablet_hide
+    {
+        display: none !important;
+    }
+
+
+
+    /*------------
+        Header
+    ------------*/
+    .mob_header
+    {
+        display: block;
+    }
+
+
+    .header_wrap
+    {
+        height: 0 !important;
+    }
+
+
+    header,
+    header.fixed,
+    header.no_bg
+    {
+        position: fixed;
+        z-index: 101;
+        top: 0;
+        left: 0;
+
+        width: 310px;
+        height: 100%;
+        min-height: -moz-available;
+        min-height: -webkit-fill-available;
+        min-height:         fill-available;
+        margin: 0;
+        padding: 0;
+
+        transition: transform .3s linear;
+        transform: translateX(-100%);
+        -webkit-animation: none;
+                animation: none;
+
+        background: #0033ab;
+        box-shadow: none;
+    }
+
+    header.show
+    {
+        transform: translateX(0);
+    }
+
+
+    header .mob_scroll
+    {
+        display: flex;
+        overflow: auto;
+
+        height: 100%;
+        min-height: -moz-available;
+        min-height: -webkit-fill-available;
+        min-height:         fill-available;
+        padding: 0;
+
+        justify-content: flex-start;
+        align-items: flex-start;
+        align-content: flex-start;
+        flex-wrap: wrap;
+    }
+
+    header .mob_scroll > *
+    {
+        width: 100%;
+    }
+
+    header .cont
+    {
+        padding: 0 20px;
+    }
+
+
+    header .logo,
+    header .search,
+    header .contacts
+    {
+        display: none;
+    }
+
+
+    header .langs
+    {
+        width: 100%;
+        margin: 0;
+        padding: 20px 0;
+
+        border-bottom: 1px solid rgba(255,255,255,.2);
+    }
+
+    header .langs .mini_modal
+    {
+        margin-top: -10px;
+    }
+
+
+    header .menu
+    {
+        display: block;
+
+        width: calc(100% + 40px);
+        margin: 20px -20px 0;
+    }
+
+    header .menu .item > a
+    {
+        font-size: 14px;
+        line-height: 20px;
+
+        padding: 8px 20px;
+
+        border-radius: 0;
+    }
+
+    header .menu .item .sub_menu,
+    header .menu .item:hover .sub_menu
+    {
+        position: relative;
+        top: 0;
+        left: 0;
+
+        display: none;
+        visibility: hidden;
+
+        width: 100%;
+        margin: 10px 0 0;
+        margin-bottom: 8px;
+
+        pointer-events: auto;
+
+        opacity: 1;
+        border-radius: 0;
+    }
+
+    header .menu .sub_menu:before
+    {
+        display: none;
+    }
+
+    header .menu .item > a.touch_link + .sub_menu.show
+    {
+        top: 0;
+
+        display: block;
+        visibility: visible;
+    }
+
+    header .menu .sub_menu a
+    {
+        padding: 6px 20px;
+    }
+
+
+
+    header.fixed .langs
+    {
+        display: block;
+    }
+
+    header.fixed .menu
+    {
+        width: calc(100% + 40px);
+        margin: 20px -20px 0;
+    }
+
+    header.fixed .menu .item > a
+    {
+        color: #fff;
+        font-size: 14px;
+
+        padding: 8px 20px;
+    }
+
+    header.fixed .menu .item > a:hover
+    {
+        color: #3f54a4;
+
+        background: #fff;
+    }
+
+
+
+    /*-------------
+        Sidebar
+    -------------*/
+    aside
+    {
+        width: 100%;
+        margin-top: 52px;
+
+        order: 2;
+    }
+
+
+
+    aside .articles .list
+    {
+        display: flex;
+
+        margin-bottom: -20px;
+        margin-left: -20px;
+
+        justify-content: flex-start;
+        align-items: flex-start;
+        align-content: flex-start;
+        flex-wrap: wrap;
+    }
+
+    aside .articles .list > *
+    {
+        width: calc(33.333% - 20px);
+        margin-bottom: 20px;
+        margin-left: 20px;
+    }
+
+    aside .articles .list > * + *
+    {
+        margin-top: 0;
+    }
+
+
+
+    /*---------------
+        Page head
+    ---------------*/
+    .breadcrumbs
+    {
+        font-size: 11px;
+        line-height: 15px;
+    }
+
+    .breadcrumbs .sep
+    {
+        margin: 0 12px;
+    }
+
+
+    .page_title.full_w
+    {
+        margin-top: 40px !important;
+    }
+
+
+    .page_desc
+    {
+        font-size: 14px;
+        line-height: 22px;
+
+        width: 384px;
+    }
+
+
+    .filter
+    {
+        width: 100%;
+        margin-top: 20px !important;
+    }
+
+    .filter .search
+    {
+        width: calc(100% - 340px);
+        margin-right: auto;
+    }
+
+
+    .page_head.with_bg
+    {
+        margin-bottom: 52px;
+        padding-bottom: 60px;
+    }
+
+    .page_head.with_bg > .bg
+    {
+        height: 100%;
+
+        object-position: 0 100%;
+    }
+
+
+
+    /*----------------
+        Block head
+    ----------------*/
+    .block_head
+    {
+        margin-bottom: 32px;
+    }
+
+    .block_head .desc
+    {
+        margin-top: 20px;
+    }
+
+    .block_head .all_link a
+    {
+        font-size: 13px;
+        line-height: 19px;
+
+        padding: 12px 32px;
+    }
+
+
+
+    /*------------------
+        Form elements
+    ------------------*/
+    .form .columns
+    {
+        --form_columns_offset: 24px;
+    }
+
+    .form .line
+    {
+        margin-bottom: 24px;
+    }
+
+
+
+    /*----------------
+        Typography
+    ----------------*/
+    .text_block
+    {
+        line-height: 24px;
+    }
+
+
+    .text_block .big
+    {
+        font-size: 17px;
+        line-height: 25px;
+
+        margin-bottom: 20px;
+    }
+
+
+    .text_block h2
+    {
+        font-size: 28px;
+    }
+
+    .text_block h3
+    {
+        font-size: 24px;
+        line-height: 28px;
+    }
+
+
+    .text_block .cols .col
+    {
+        width: calc(50% - 24px);
+    }
+
+
+    .text_block blockquote
+    {
+        padding: 28px 32px;
+    }
+
+
+
+    /*-----------------
+        Main slider
+    -----------------*/
+    .main_slider .slide .cont
+    {
+        min-height: 440px;
+        padding-top: 60px;
+        padding-bottom: 120px;
+    }
+
+
+    .main_slider .slide .info
+    {
+        width: 372px;
+    }
+
+
+    .main_slider .slide .title
+    {
+        font-size: 32px;
+        line-height: 40px;
+    }
+
+    .main_slider .slide .desc
+    {
+        font-size: 15px;
+        line-height: 23px;
+
+        margin-top: 20px;
+    }
+
+
+    .main_slider .slide .bg
+    {
+        height: 100%;
+    }
+
+
+    .main_slider .swiper-container-horizontal > .swiper-pagination-bullets,
+    .main_slider .swiper-pagination-custom,
+    .main_slider .swiper-pagination-fraction
+    {
+        bottom: 32px;
+    }
+
+
+
+    .main_slider .promo_products
+    {
+        bottom: 32px;
+
+        width: 272px;
+    }
+
+
+
+    /*--------------------
+        Promo products
+    --------------------*/
+    .promo_products .product .thumb
+    {
+        height: 272px;
+    }
+
+    .promo_products .product .name
+    {
+        font-size: 19px;
+        line-height: 21px;
+    }
+
+    .promo_products .product .desc
+    {
+        font-size: 14px;
+        line-height: 20px;
+
+        width: 100%;
+        max-width: 100%;
+    }
+
+    .promo_products .product .link
+    {
+        display: none;
+    }
+
+
+
+    /*---------------------
+        Catagories wall
+    ---------------------*/
+    .catagories_wall
+    {
+        padding: 64px 0;
+    }
+
+
+    .catagories_wall .row
+    {
+        width: calc(100% + 24px);
+    }
+
+
+    .catagories_wall .category
+    {
+        font-size: 15px;
+    }
+
+    .catagories_wall .category .icon
+    {
+        width: 92px;
+        height: 92px;
+        padding: 18px;
+    }
+
+
+
+    /*-----------------
+        Main slider
+    -----------------*/
+    .search_result form
+    {
+        margin-bottom: 32px;
+    }
+
+
+    .search_result .item
+    {
+        padding: 24px;
+    }
+
+    .search_result .item .name
+    {
+        font-size: 17px;
+    }
+
+    .search_result .item .desc
+    {
+        margin-top: 12px;
+    }
+
+
+
+    /*--------------
+        Products
+    --------------*/
+    .products .block_title
+    {
+        font-size: var(--font_size_title);
+    }
+
+
+    .products .row
+    {
+        --products_count: 3;
+    }
+
+    .products .row > *
+    {
+        width: calc(33.333% - 20px);
+    }
+
+
+
+    /*------------------
+        Product info
+    ------------------*/
+    .product_info
+    {
+        padding-left: 0;
+    }
+
+
+
+    /*-----------------------
+        Pharmacovigilance
+    -----------------------*/
+    .pharmacovigilance
+    {
+        padding-top: 32px;
+    }
+
+
+    .pharmacovigilance .data
+    {
+        width: 100%;
+        max-width: 100%;
+        padding-bottom: 52px;
+    }
+
+    .pharmacovigilance .data .block_title
+    {
+        font-size: 34px;
+        line-height: 40px;
+
+        margin-bottom: 32px;
+    }
+
+    .pharmacovigilance .data .title
+    {
+        font-size: 16px;
+        line-height: 24px;
+    }
+
+
+
+    /*--------------
+        Feedback
+    --------------*/
+    .feedback
+    {
+        width: 100%;
+        padding: 40px;
+    }
+
+    .feedback .block_title
+    {
+        font-size: 22px;
+        line-height: 26px;
+    }
+
+
+
+    /*-------------
+        History
+    -------------*/
+    .history .head
+    {
+        top: -250px;
+
+        height: 378px;
+    }
+
+    .history .head .img
+    {
+        object-position: 65% 100%;
+    }
+
+
+
+    .history .bg_section
+    {
+        margin: 64px 0;
+        padding: 64px 0;
+    }
+
+
+    .history .item:before
+    {
+        top: 56px;
+        left: 85px;
+
+        width: 6px;
+        height: calc(100% + 8px);
+    }
+
+    .history .item + .item
+    {
+        margin-top: 64px;
+    }
+
+    .history .item.start
+    {
+        margin-bottom: 64px;
+        padding-bottom: 72px;
+    }
+
+    .history .item.top_line:after
+    {
+        left: 85px;
+
+        width: 6px;
+        height: 64px;
+    }
+
+
+    .history .item .year
+    {
+        font-size: 28px;
+        line-height: 52px;
+
+        width: 172px;
+        height: 56px;
+    }
+
+    .history .item .year + *
+    {
+        width: calc(100% - 200px);
+    }
+
+    .history .item .title
+    {
+        font-size: 20px;
+        line-height: 24px;
+    }
+
+
+
+    .history .present_time
+    {
+        margin-top: 64px;
+        padding: 64px 0;
+    }
+
+
+
+    /*----------------
+        Error info
+    ----------------*/
+    .error_info .title
+    {
+        font-size: 32px;
+        line-height: 38px;
+    }
+
+    .error_info .desc
+    {
+        font-size: 16px;
+        line-height: 24px;
+    }
+
+
+
+    /*-------------------
+        Contacts info
+    -------------------*/
+    .contacts_info .data
+    {
+        width: 100%;
+        padding-bottom: 52px;
+    }
+
+
+    .contacts_info .feedback
+    {
+        margin-bottom: 52px;
+    }
+
+
+    .contacts_info .region_map .map
+    {
+        height: 420px;
+    }
+
+
+
+    /*--------------
+        Articles
+    --------------*/
+    .articles .row > *
+    {
+        width: calc(33.333% - 20px);
+    }
+
+
+
+    /*------------------
+        Article info
+    ------------------*/
+    .article_info .head
+    {
+        margin-bottom: 32px;
+    }
+
+    .article_info .head .article_title
+    {
+        font-size: 28px;
+        line-height: 34px;
+    }
+
+    .article_info .head .date
+    {
+        margin-top: 20px;
+    }
+
+
+
+    /*----------------
+        Our values
+    ----------------*/
+    .our_values .items
+    {
+        column-gap: 40px;
+    }
+
+
+    .our_values .data
+    {
+        width: 100%;
+    }
+
+
+    .our_values .image
+    {
+        display: none;
+    }
+
+
+
+    /*----------------------
+        Production areas
+    ----------------------*/
+    .production_areas
+    {
+        padding: 100px 0 72px;
+    }
+
+
+    .production_areas .block_head
+    {
+        width: 100%;
+        margin-bottom: 32px;
+    }
+
+
+    .production_areas .gallery
+    {
+        width: 100%;
+    }
+
+    .production_areas .gallery .row
+    {
+        margin-bottom: -16px;
+        margin-left: -16px;
+    }
+
+    .production_areas .gallery .row > *
+    {
+        width: calc(25% - 16px);
+        margin-bottom: 16px;
+        margin-left: 16px;
+    }
+
+
+
+    /*--------------------------
+        Research development
+    --------------------------*/
+    .research_development .text_block
+    {
+        width: 100%;
+    }
+
+
+    .research_development .image
+    {
+        display: none;
+    }
+
+
+
+    /*-------------
+        Quality
+    -------------*/
+    .quality .text_block
+    {
+        width: 100%;
+    }
+
+
+    .quality .quote
+    {
+        width: 100%;
+        margin-top: 40px;
+        padding: 28px 32px;
+    }
+
+
+
+    /*-----------
+        Stats
+    -----------*/
+    .stats .row
+    {
+        margin-left: -32px;
+        padding-right: 0;
+    }
+
+    .stats .row > *
+    {
+        width: calc(33.333% - 32px);
+        margin-left: 32px;
+    }
+
+    .stats .row > *:nth-child(4)
+    {
+        margin-left: 32px;
+    }
+
+    .stats .row > *:last-child
+    {
+        margin-right: 0;
+    }
+
+
+    .stats .item
+    {
+        padding: 20px;
+    }
+
+    .stats .item:before
+    {
+        width: 32px;
+    }
+
+    .stats .item .val
+    {
+        font-size: 14px;
+        line-height: 20px;
+    }
+
+    .stats .item .val span
+    {
+        font-size: 24px;
+    }
+
+
+
+    /*-----------------
+        Cooperation
+    -----------------*/
+    .cooperation
+    {
+        padding-bottom: 0;
+    }
+
+
+    .cooperation .text_block
+    {
+        width: 100%;
+    }
+
+
+    .cooperation .feedback
+    {
+        width: 100%;
+        margin-top: 40px;
+        margin-bottom: 0;
+    }
+
+
+
+    /*------------
+        Footer
+    ------------*/
+    footer .bottom
+    {
+        padding: 20px 0;
+    }
+
+
+    footer .menu
+    {
+        display: none;
+    }
+
+
+    footer .contacts
+    {
+        line-height: 19px;
+
+        display: flex;
+
+        width: 100%;
+        margin: 0;
+
+        justify-content: space-between;
+        align-items: center;
+        align-content: center;
+        flex-wrap: wrap;
+    }
+
+    footer .contacts .phone,
+    footer .contacts .email
+    {
+        margin-top: 0;
+    }
+}

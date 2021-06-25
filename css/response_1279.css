@@ -1,0 +1,1238 @@
+@media print, (max-width: 1279px)
+{
+    /*-------------------
+        Global styles
+    -------------------*/
+    :root
+    {
+        --sidebar_width: 260px;
+        --font_size: 15px;
+        --font_size_title: 38px;
+    }
+
+
+    .content_flex.big_aside
+    {
+        --sidebar_width: 260px;
+    }
+
+    .content_flex .content
+    {
+        width: calc(100% - var(--sidebar_width) - 40px);
+    }
+
+
+
+    /*----------------
+        Pagination
+    ----------------*/
+    .pagination
+    {
+        margin-top: 40px;
+    }
+
+
+
+    /*---------------
+        Load more
+    ---------------*/
+    .load_more
+    {
+        margin-top: 40px;
+    }
+
+    .load_more .btn
+    {
+        width: 216px;
+        height: 48px;
+    }
+
+
+
+    /*-----------
+        Share
+    -----------*/
+    .share
+    {
+        margin-top: 40px;
+    }
+
+    .share > div
+    {
+        padding: 16px 32px;
+    }
+
+
+
+    /*------------
+        Header
+    ------------*/
+    header
+    {
+        padding: 24px 0;
+    }
+
+
+    header .logo,
+    header .logo img
+    {
+        width: 180px;
+    }
+
+
+    header .langs
+    {
+        margin-left: 40px;
+    }
+
+
+    header .contacts
+    {
+        margin-left: 40px;
+    }
+
+    header .contacts .phone
+    {
+        font-size: 18px;
+    }
+
+    header .contacts .email
+    {
+        margin-top: 2px;
+    }
+
+
+    header .menu
+    {
+        width: calc(100% + 32px);
+        margin: 20px -16px 0;
+    }
+
+    header .menu .item > a
+    {
+        font-size: 13px;
+        line-height: 19px;
+
+        padding: 8px 16px;
+    }
+
+    header .menu .sub_menu a
+    {
+        font-size: 13px;
+        line-height: 19px;
+
+        padding: 6px 16px;
+    }
+
+
+
+    header.fixed
+    {
+        padding: 12px 0;
+    }
+
+    header.fixed .logo,
+    header.fixed .logo img
+    {
+        display: none;
+
+        width: 152px;
+    }
+
+    header.fixed .menu
+    {
+        width: calc(100% + 32px);
+        margin-top: 0;
+        margin-left: -16px;
+    }
+
+    header.fixed .menu .item > a
+    {
+        padding: 8px 16px;
+    }
+
+
+
+    /*-------------
+        Sidebar
+    -------------*/
+    aside .block_title
+    {
+        font-size: 25px;
+        line-height: 29px;
+    }
+
+
+
+    aside .categories .title
+    {
+        font-size: 14px;
+        line-height: 20px;
+
+        padding: 14px 20px;
+    }
+
+
+    aside .categories .category a
+    {
+        font-size: 13px;
+
+        min-height: 52px;
+        padding: 12px 40px 12px 20px;
+    }
+
+    aside .categories .category .arrow
+    {
+        width: 52px;
+    }
+
+    aside .categories .sub a
+    {
+        font-size: 13px;
+
+        min-height: 48px;
+        padding: 12px 20px 12px 40px;
+    }
+
+
+
+    /*---------------
+        Page head
+    ---------------*/
+    .page_head
+    {
+        margin-bottom: 40px;
+        padding-top: 20px;
+    }
+
+    .page_head .cont > * + *
+    {
+        margin-top: 28px;
+    }
+
+
+
+    .breadcrumbs .sep
+    {
+        margin: 0 16px;
+    }
+
+
+    .page_title
+    {
+        line-height: calc(var(--font_size_title) + 4px);
+    }
+
+
+    .page_desc
+    {
+        font-size: 16px;
+        line-height: 26px;
+
+        width: 436px;
+    }
+
+
+    .filter .item + .item
+    {
+        margin-left: 32px;
+    }
+
+
+    .filter .name
+    {
+        font-size: 14px;
+        line-height: 20px;
+
+        margin-right: 16px;
+    }
+
+
+    .filter .nice-select .current
+    {
+        font-size: 13px;
+        line-height: 44px;
+
+        height: 44px;
+        padding: 0 52px 0 24px;
+    }
+
+    .filter .nice-select .current:after
+    {
+        top: -5px;
+        right: 20px;
+
+        width: 10px;
+        height: 10px;
+    }
+
+    .filter .nice-select .list
+    {
+        padding: 8px 0;
+    }
+
+    .filter .nice-select .list .list_item
+    {
+        font-size: 13px;
+        line-height: 19px;
+
+        padding: 6px 24px;
+    }
+
+
+    .filter .search
+    {
+        width: 360px;
+    }
+
+    .filter .search form .input,
+    .filter .search form .submit_btn
+    {
+        height: 44px;
+    }
+
+
+    .filter .type a
+    {
+        font-size: 12px;
+
+        padding: 11px 19px;
+    }
+
+
+
+    .page_head.with_bg
+    {
+        margin-bottom: 60px;
+        padding-bottom: 72px;
+    }
+
+    .page_head.with_bg .breadcrumbs
+    {
+        margin-bottom: 0;
+    }
+
+    .page_head.with_bg > .bg
+    {
+        height: calc(100% + 145px);
+
+        object-position: 70% 100%;
+    }
+
+
+
+    /*----------------
+        Block head
+    ----------------*/
+    .block_head
+    {
+        margin-bottom: 40px;
+    }
+
+
+    .block_head .title
+    {
+        line-height: calc(var(--font_size_title) + 4px);
+    }
+
+    .block_head .desc
+    {
+        margin-top: 32px;
+    }
+
+
+
+    /*------------------
+        Form elements
+    ------------------*/
+    .form .columns
+    {
+        --form_columns_offset: 20px;
+    }
+
+    .form .line
+    {
+        margin-bottom: 20px;
+    }
+
+    .form .input,
+    .form textarea
+    {
+        font-size: 13px;
+    }
+
+
+    .form .submit_btn
+    {
+        padding: 12px 28px;
+    }
+
+
+    .form .bottom .agree
+    {
+        max-width: calc(100% - 196px);
+    }
+
+    .form .bottom .submit
+    {
+        width: 164px;
+    }
+
+
+
+    /*----------------
+        Typography
+    ----------------*/
+    .text_block
+    {
+        line-height: 25px;
+    }
+
+    .text_block.normal
+    {
+        font-size: 14px;
+        line-height: 20px;
+    }
+
+
+    .text_block > *,
+    .text_block .cols .col > *,
+    .text_block blockquote > *
+    {
+        margin-bottom: 20px;
+    }
+
+
+    .text_block .big
+    {
+        font-size: 18px;
+        line-height: 26px;
+
+        margin-bottom: 24px;
+    }
+
+
+    .text_block h2
+    {
+        font-size: 30px;
+
+        margin-bottom: 24px;
+    }
+
+    .text_block h3
+    {
+        font-size: 25px;
+        line-height: 29px;
+    }
+
+
+    .text_block .cols .col
+    {
+        width: calc(50% - 36px);
+    }
+
+
+    .text_block ul li,
+    .text_block ol li
+    {
+        line-height: 22px;
+    }
+
+    .text_block ul li + li,
+    .text_block ol li + li
+    {
+        margin-top: 12px;
+    }
+
+
+    .text_block table th,
+    .text_block table td
+    {
+        line-height: 18px;
+
+        padding: 12px 16px;
+    }
+
+
+    .text_block .gallery .row
+    {
+        margin-bottom: -20px;
+        margin-left: -20px;
+    }
+
+    .text_block .gallery .row > *
+    {
+        width: calc(33.333% - 20px);
+        margin-bottom: 20px;
+        margin-left: 20px;
+    }
+
+
+    .text_block img.right
+    {
+        max-width: calc(50% - 32px);
+        margin-left: 32px;
+    }
+
+    .text_block img.left
+    {
+        max-width: calc(50% - 32px);
+        margin-right: 32px;
+    }
+
+
+    .text_block blockquote
+    {
+        font-size: 16px;
+        line-height: 24px;
+
+        margin-top: 32px;
+        margin-bottom: 32px !important;
+        padding: 32px 36px;
+    }
+
+
+
+    /*-----------------
+        Main slider
+    -----------------*/
+    .main_slider .slide .info
+    {
+        width: 384px;
+    }
+
+
+    .main_slider .slide .title
+    {
+        font-size: 36px;
+        line-height: 44px;
+    }
+
+    .main_slider .slide .desc
+    {
+        font-size: 17px;
+        line-height: 25px;
+
+        margin-top: 24px;
+    }
+
+    .main_slider .slide .link
+    {
+        margin-top: 32px;
+        padding: 12px 40px;
+    }
+
+
+    .main_slider .swiper-container-horizontal > .swiper-pagination-bullets,
+    .main_slider .swiper-pagination-custom,
+    .main_slider .swiper-pagination-fraction
+    {
+        left: 24px;
+
+        margin-left: 0;
+    }
+
+    .main_slider .swiper-pagination-bullet + .swiper-pagination-bullet
+    {
+        margin-left: 20px !important;
+    }
+
+
+
+    .main_slider .promo_products
+    {
+        right: 24px;
+
+        width: 352px;
+        margin-right: 0;
+    }
+
+
+
+    /*--------------------
+        Promo products
+    --------------------*/
+    .promo_products .product .thumb
+    {
+        height: 352px;
+        margin-bottom: 12px;
+    }
+
+    .promo_products .product .name
+    {
+        font-size: 21px;
+        line-height: 23px;
+    }
+
+    .promo_products .product .desc
+    {
+        font-size: 14px;
+        line-height: 20px;
+
+        width: 180px;
+        max-width: calc(100% - 184px);
+    }
+
+    .promo_products .product .link
+    {
+        font-size: 13px;
+        line-height: 19px;
+
+        width: 160px;
+        padding: 12px 24px;
+    }
+
+
+
+    /*---------------------
+        Catagories wall
+    ---------------------*/
+    .catagories_wall
+    {
+        padding: 72px 0;
+    }
+
+
+    .catagories_wall .row
+    {
+        width: 688px;
+        max-width: calc(100% + 24px);
+        margin-left: -24px;
+    }
+
+    .catagories_wall .row > *
+    {
+        width: calc(33.333% - 24px);
+        margin-left: 24px;
+    }
+
+
+    .catagories_wall .category
+    {
+        font-size: 16px;
+    }
+
+    .catagories_wall .category .icon
+    {
+        width: 100px;
+        height: 100px;
+        margin: 0 auto 16px;
+        padding: 20px;
+    }
+
+
+
+    /*-------------------
+        Search result
+    -------------------*/
+    .search_result form
+    {
+        margin-bottom: 40px;
+    }
+
+
+    .search_result .item
+    {
+        padding: 32px;
+    }
+
+    .search_result .item .desc
+    {
+        margin-top: 16px;
+    }
+
+
+
+    /*--------------
+        Products
+    --------------*/
+    .products .alphabet
+    {
+        margin-bottom: 16px;
+        margin-left: -16px;
+        padding: 0;
+    }
+
+    .products .alphabet > *
+    {
+        margin-bottom: 8px;
+        margin-left: 16px;
+    }
+
+
+
+    .products .product
+    {
+        padding: 40px 0 24px;
+    }
+
+    .products .product .thumb
+    {
+        margin-bottom: 16px;
+        padding-bottom: 64%;
+    }
+
+    .products .product .name
+    {
+        font-size: 18px;
+        line-height: 22px;
+
+        padding: 0 20px;
+    }
+
+    .products .product .desc
+    {
+        font-size: 15px;
+        line-height: 21px;
+
+        padding: 0 20px;
+    }
+
+
+
+    /*------------------
+        Product info
+    ------------------*/
+    .product_info
+    {
+        padding-left: 32px;
+    }
+
+
+    .product_info > .head
+    {
+        margin-bottom: 32px;
+    }
+
+
+    .product_info > .data .info
+    {
+        width: calc(100% - 344px);
+    }
+
+
+    .product_info > .data .info .item + .item
+    {
+        margin-top: 28px;
+    }
+
+    .product_info > .data .info .title
+    {
+        margin-bottom: 12px;
+    }
+
+
+
+    .product_info .where_buy
+    {
+        padding: 0 32px;
+
+        border-radius: 16px;
+    }
+
+    .product_info .where_buy .head .title
+    {
+        font-size: 18px;
+        line-height: 22px;
+    }
+
+    .product_info .where_buy .head:after
+    {
+        top: -7px;
+
+        width: 14px;
+        height: 14px;
+    }
+
+    .product_info .where_buy .items
+    {
+        margin-bottom: 32px;
+    }
+
+    .product_info .where_buy .item
+    {
+        height: 100px;
+    }
+
+
+
+    .product_info .instruction .block_title
+    {
+        font-size: 24px;
+        line-height: 28px;
+
+        width: 100%;
+    }
+
+    .product_info .instruction .download
+    {
+        margin-top: 12px;
+    }
+
+    .product_info .instruction .download a
+    {
+        font-size: 13px;
+        line-height: 19px;
+
+        padding: 10px 32px;
+    }
+
+
+
+    /*-----------------------
+        Pharmacovigilance
+    -----------------------*/
+    .pharmacovigilance
+    {
+        padding-top: 52px;
+    }
+
+
+    .pharmacovigilance .data
+    {
+        max-width: calc(50% - 50px);
+        padding-bottom: 64px;
+    }
+
+    .pharmacovigilance .data .block_title
+    {
+        font-size: 36px;
+        line-height: 42px;
+
+        margin-bottom: 40px;
+    }
+
+    .pharmacovigilance .data .title
+    {
+        font-size: 17px;
+        line-height: 25px;
+    }
+
+    .pharmacovigilance .data .items
+    {
+        font-size: 14px;
+        line-height: 22px;
+    }
+
+
+
+    /*--------------
+        Feedback
+    --------------*/
+    .feedback
+    {
+        padding: 32px;
+    }
+
+    .feedback .block_title
+    {
+        font-size: 23px;
+        line-height: 27px;
+
+        margin-bottom: 24px;
+    }
+
+
+
+    /*-------------
+        History
+    -------------*/
+    .history .head
+    {
+        top: -426px;
+
+        height: 566px;
+    }
+
+    .history .head .img
+    {
+        object-position: 65% 100%;
+    }
+
+
+
+    .history .bg_section
+    {
+        margin: 72px 0;
+        padding: 72px 0;
+    }
+
+
+    .history .item:before
+    {
+        top: 60px;
+        left: 96px;
+    }
+
+    .history .item + .item
+    {
+        margin-top: 72px;
+    }
+
+    .history .item.start
+    {
+        margin-bottom: 72px;
+        padding-bottom: 80px;
+    }
+
+    .history .item.top_line:after
+    {
+        left: 96px;
+
+        height: 72px;
+    }
+
+
+    .history .item .year
+    {
+        font-size: 32px;
+        line-height: 56px;
+
+        width: 200px;
+        height: 60px;
+    }
+
+    .history .item .year + *
+    {
+        width: calc(100% - 240px);
+    }
+
+    .history .item .title
+    {
+        font-size: 21px;
+        line-height: 25px;
+    }
+
+
+
+    .history .present_time
+    {
+        margin-top: 72px;
+        padding: 72px 0;
+    }
+
+    .history .present_time .link
+    {
+        padding: 14px 40px;
+    }
+
+
+
+    /*---------------
+        Geography
+    ---------------*/
+    .geography #map
+    {
+        height: 650px;
+    }
+
+
+
+    /*----------------
+        Error info
+    ----------------*/
+    .error_info
+    {
+        padding-top: 124px;
+    }
+
+
+    .error_info .title
+    {
+        font-size: 36px;
+        line-height: 42px;
+    }
+
+    .error_info .desc
+    {
+        font-size: 17px;
+        line-height: 25px;
+    }
+
+    .error_info .links a
+    {
+        font-size: 13px;
+        line-height: 19px;
+
+        padding: 12px 36px;
+    }
+
+
+
+    /*-------------------
+        Contacts info
+    -------------------*/
+    .contacts_info .data
+    {
+        width: calc(50% - 50px);
+    }
+
+    .contacts_info .data .name
+    {
+        font-size: 17px;
+        line-height: 21px;
+    }
+
+    .contacts_info .data .nice-select .current
+    {
+        line-height: 50px;
+
+        height: 50px;
+        padding: 0 64px 0 20px;
+    }
+
+
+
+    /*--------------
+        Articles
+    --------------*/
+    .articles.padding
+    {
+        padding-bottom: 0;
+    }
+
+
+    .articles .article .info
+    {
+        padding: 20px;
+    }
+
+    .articles .article .name
+    {
+        font-size: 15px;
+        line-height: 21px;
+    }
+
+
+
+    /*------------------
+        Article info
+    ------------------*/
+    .article_info .head .article_title
+    {
+        font-size: 32px;
+        line-height: 38px;
+
+        margin-right: 0;
+    }
+
+
+
+    /*----------------
+        Our values
+    ----------------*/
+    .our_values .items
+    {
+        column-gap: 72px;
+    }
+
+
+    .our_values .data
+    {
+        width: calc(100% - 420px);
+    }
+
+
+    .our_values .image
+    {
+        width: 380px;
+        height: 380px;
+    }
+
+
+
+    /*----------------------
+        Production areas
+    ----------------------*/
+    .production_areas
+    {
+        padding: 120px 0 80px;
+    }
+
+
+    .production_areas .gallery
+    {
+        width: calc(50% - 40px);
+    }
+
+    .production_areas .gallery .row
+    {
+        margin-bottom: -20px;
+        margin-left: -20px;
+    }
+
+    .production_areas .gallery .row > *
+    {
+        width: calc(50% - 20px);
+        margin-bottom: 20px;
+        margin-left: 20px;
+    }
+
+
+
+    /*--------------------------
+        Research development
+    --------------------------*/
+    .research_development .block_head
+    {
+        margin-bottom: 40px;
+    }
+
+
+    .research_development .text_block
+    {
+        width: calc(100% - 420px);
+    }
+
+
+    .research_development .image
+    {
+        width: 380px;
+        height: 380px;
+    }
+
+
+
+    /*-------------
+        Quality
+    -------------*/
+    .quality
+    {
+        padding: 72px 0;
+    }
+
+
+    .quality .text_block
+    {
+        width: calc(100% - 460px);
+    }
+
+
+    .quality .quote
+    {
+        font-size: 16px;
+        line-height: 24px;
+
+        width: 420px;
+        padding: 32px 36px;
+    }
+
+
+
+    /*-----------
+        Stats
+    -----------*/
+    .stats .row
+    {
+        margin-bottom: -16px;
+        margin-left: -64px;
+        padding-right: 64px;
+    }
+
+    .stats .row > *
+    {
+        width: calc(33.333% - 64px);
+        margin-bottom: 16px;
+        margin-left: 64px;
+    }
+
+    .stats .row > *:nth-child(4)
+    {
+        margin-left: 128px;
+    }
+
+    .stats .row > *:last-child
+    {
+        margin-right: -64px;
+    }
+
+
+    .stats .item
+    {
+        font-size: 14px;
+
+        padding: 24px;
+    }
+
+    .stats .item:before
+    {
+        width: 64px;
+    }
+
+    .stats .item .val
+    {
+        font-size: 15px;
+        line-height: 19px;
+    }
+
+    .stats .item .val span
+    {
+        font-size: 28px;
+    }
+
+
+
+    /*-----------------
+        Cooperation
+    -----------------*/
+    .cooperation
+    {
+        padding: 72px 0 64px;
+    }
+
+
+    .cooperation .block_head
+    {
+        margin-bottom: 32px;
+    }
+
+
+    .cooperation .text_block
+    {
+        width: calc(100% - 548px);
+    }
+
+
+    .cooperation .feedback
+    {
+        width: 508px;
+        margin-bottom: -64px;
+    }
+
+
+
+    /*------------
+        Footer
+    ------------*/
+    footer .bottom
+    {
+        line-height: 19px;
+
+        padding: 24px 0;
+    }
+
+
+    footer .menu .item > a
+    {
+        font-size: 13px;
+        line-height: 19px;
+    }
+
+    footer .menu .sub_menu
+    {
+        margin-top: 12px;
+    }
+
+    footer .menu .sub_menu a
+    {
+        font-size: 12px;
+        line-height: 24px;
+    }
+
+
+    footer.white
+    {
+        padding-top: 52px;
+        padding-bottom: 12px;
+    }
+}
