@@ -1230,6 +1230,18 @@
     }
 
 
+    footer .contacts
+    {
+        width: 268px;
+        margin-top: 20px;
+    }
+
+    footer .contacts br
+    {
+        display: none;
+    }
+
+
     footer.white
     {
         padding-top: 52px;

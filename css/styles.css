@@ -1204,6 +1204,12 @@ header .menu .sub_menu a.active
 
 
 
+.mob_header_wrap
+{
+    display: none;
+}
+
+
 .mob_header
 {
     position: relative;
@@ -1412,6 +1418,14 @@ header .menu .sub_menu a.active
 .mob_header .mob_menu_btn span:after
 {
     top: 8px;
+}
+
+
+.mob_header.fixed
+{
+    position: fixed;
+
+    margin: 0;
 }
 
 
@@ -5501,10 +5515,10 @@ aside .categories .sub a.active
     object-fit: cover;
 }
 
-.our_values .image img.loaded
+/* .our_values .image img.loaded
 {
     opacity: .8;
-}
+} */
 
 
 
@@ -6089,6 +6103,7 @@ footer .contacts
     width: 320px;
     max-width: 100%;
     margin-top: 25px;
+    margin-bottom: 55px;
     margin-left: auto;
     padding: 20px;
 

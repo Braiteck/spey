@@ -174,6 +174,18 @@ $(window).on('load', () => {
 		: $('header').removeClass('fixed')
 
 
+	// Моб. фикс. шапка
+	mobHeaderInit = true,
+		mobHeaderHeight = $('.mob_header').outerHeight()
+
+	$('.mob_header').wrap('<div class="mob_header_wrap"></div>')
+	$('.mob_header_wrap').height(mobHeaderHeight)
+
+	mobHeaderInit && $(window).scrollTop() > 0
+		? $('.mob_header').addClass('fixed')
+		: $('.mob_header').removeClass('fixed')
+
+
 	// Статьи - сетка
 	let articles = $('.articles .masonry'),
 		articlesGutter = parseInt(articles.css('--articles_gutter'))
@@ -209,6 +221,22 @@ $(window).resize(() => {
 			? $('header').addClass('fixed')
 			: $('header').removeClass('fixed')
 	}, 100)
+
+
+	// Моб. фикс. шапка
+	mobHeaderInit = false
+	$('.mob_header_wrap').height('auto')
+
+	setTimeout(() => {
+		mobHeaderInit = true
+		mobHeaderHeight = $('.mob_header').outerHeight()
+
+		$('.mob_header_wrap').height(mobHeaderHeight)
+
+		mobHeaderInit && $(window).scrollTop() > 0
+			? $('.mob_header').addClass('fixed')
+			: $('.mob_header').removeClass('fixed')
+	}, 100)
 })
 
 
@@ -218,6 +246,11 @@ $(window).scroll(() => {
 	typeof headerInit !== 'undefined' && headerInit && $(window).scrollTop() > headerHeight
 		? $('header').addClass('fixed')
 		: $('header').removeClass('fixed')
+
+	// Моб. фикс. шапка
+	typeof mobHeaderInit !== 'undefined' && mobHeaderInit && $(window).scrollTop() > 0
+		? $('.mob_header').addClass('fixed')
+		: $('.mob_header').removeClass('fixed')
 })
 
 

@@ -34,6 +34,7 @@
     /*------------
         Header
     ------------*/
+    .mob_header_wrap,
     .mob_header
     {
         display: block;
@@ -142,10 +143,45 @@
         font-size: 14px;
         line-height: 20px;
 
-        padding: 8px 20px;
+        position: relative;
+
+        display: inline-block;
+
+        padding: 8px 42px 8px 20px;
+
+        vertical-align: top;
 
         border-radius: 0;
     }
+
+    header .menu .item > a.sub_link:before
+    {
+        position: absolute;
+        top: -3px;
+        right: 20px;
+        bottom: 0;
+
+        display: block;
+
+        width: 7px;
+        height: 7px;
+        margin: auto;
+
+        content: '';
+        transition: border-color .2s linear;
+        transform: rotate(-45deg);
+
+        border-bottom: 2px solid;
+        border-left: 2px solid;
+    }
+
+
+    header .menu .item:hover > a.sub_link:before,
+    header .menu .item > a.active.sub_link:before
+    {
+        border-color: #3f54a4;
+    }
+
 
     header .menu .item .sub_menu,
     header .menu .item:hover .sub_menu
@@ -962,6 +998,11 @@
         align-items: center;
         align-content: center;
         flex-wrap: wrap;
+    }
+
+    footer .contacts br
+    {
+        display: block;
     }
 
     footer .contacts .phone,
