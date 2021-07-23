@@ -33,6 +33,23 @@
     }
 
 
+    .swiper-button-next,
+    .swiper-button-prev
+    {
+        color: #3148b5;
+    }
+
+    .swiper-button-prev
+    {
+        left: 44px;
+    }
+
+    .swiper-button-next
+    {
+        right: 100px;
+    }
+
+
 
     /*---------------
         Load more

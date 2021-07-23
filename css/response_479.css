@@ -10,6 +10,18 @@
 
 
 
+    .swiper-button-prev
+    {
+        left: -8px;
+    }
+
+    .swiper-button-next
+    {
+        right: -8px;
+    }
+
+
+
     /*----------------
         Pagination
     ----------------*/

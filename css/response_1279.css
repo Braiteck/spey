@@ -23,6 +23,26 @@
 
 
 
+    .swiper-button-next,
+    .swiper-button-prev
+    {
+        top: 160px;
+
+        transform: scale(.8);
+    }
+
+    .swiper-button-prev
+    {
+        left: -16px;
+    }
+
+    .swiper-button-next
+    {
+        right: 64px;
+    }
+
+
+
     /*----------------
         Pagination
     ----------------*/
@@ -542,6 +562,7 @@
     .main_slider .promo_products
     {
         right: 24px;
+        bottom: 32px;
 
         width: 352px;
         margin-right: 0;

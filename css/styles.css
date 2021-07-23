@@ -3079,12 +3079,17 @@ aside .categories .sub a.active
 {
     display: flex;
 
-    pointer-events: auto;
+    pointer-events: none;
 
     justify-content: space-between;
     align-items: center;
     align-content: center;
     flex-wrap: wrap;
+}
+
+.promo_products .swiper-slide.active .product
+{
+    pointer-events: auto;
 }
 
 

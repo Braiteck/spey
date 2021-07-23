@@ -1,43 +1,31 @@
 .swiper-button-next,
 .swiper-button-prev
 {
-    top: auto;
-    bottom: -4px;
+    color: #fff;
+
+    top: 200px;
+    bottom: auto;
 
     display: block;
 
     width: 50px;
-    height: 32px;
+    height: 50px;
+    margin: -25px 0 0;
+
+    transform: none;
+
+    border: 1px solid;
+    border-radius: 50%;
 }
 
 .swiper-button-prev
 {
-    left: 50%;
+    left: -20px;
 }
 
 .swiper-button-next
 {
-    right: 50%;
-}
-
-.swiper-button-next:before,
-.swiper-button-prev:before
-{
-    position: absolute;
-    top: 0;
-    right: 0;
-    bottom: 0;
-    left: 0;
-
-    display: block;
-
-    width: 30px;
-    height: 2px;
-    margin: auto;
-
-    content: '';
-
-    background: #287ddb;
+    right: 72px;
 }
 
 .swiper-button-next:after,
@@ -47,7 +35,7 @@
     top: 0;
     right: 0;
     bottom: 0;
-    left: -14px;
+    left: 7px;
 
     display: block;
 
@@ -58,13 +46,13 @@
     content: '';
     transform: rotate(-45deg);
 
-    border-top: 2px solid #287ddb;
-    border-left: 2px solid #287ddb;
+    border-top: 2px solid;
+    border-left: 2px solid;
 }
 
 .swiper-button-next:after
 {
-    left: 14px;
+    left: -7px;
 
     transform: rotate(-225deg);
 }

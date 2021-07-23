@@ -30,6 +30,20 @@
     }
 
 
+    .swiper-button-next,
+    .swiper-button-prev
+    {
+        top: 128px;
+
+        transform: scale(.7);
+    }
+
+    .swiper-button-next
+    {
+        right: 44px;
+    }
+
+
 
     /*------------
         Header
@@ -479,7 +493,7 @@
 
     .main_slider .promo_products
     {
-        bottom: 32px;
+        bottom: 0;
 
         width: 272px;
     }
